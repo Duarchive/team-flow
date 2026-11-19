@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="팀 프로젝트 일정과 할 일을 관리하는 워크스페이스"><title>팀플로우 — 팀 일정 관리</title><link rel="stylesheet" href="style.css"><script defer src="app.js"></script></head>
+<body>
+<div class="shell">
+<aside class="sidebar">
+  <div class="brand"><span class="logo" data-icon="layers"></span><strong>팀플로우</strong></div>
+  <div class="workspace"><span class="team-mark">8</span><div><strong>전지적 액터 시점</strong><small>시스템 분석 및 설계</small></div></div>
+  <p class="nav-label">워크스페이스</p>
+  <nav aria-label="주 메뉴">
+    <button data-view="dashboard"><span data-icon="home"></span>대시보드</button>
+    <button data-view="calendar"><span data-icon="calendar"></span>일정 관리</button>
+    <button data-view="tasks"><span data-icon="square"></span>팀 협업</button>
+    <button data-view="profile"><span data-icon="user"></span>내 프로필</button>
+  </nav>
+  <button class="profile" type="button" data-action="view:profile"><span class="avatar" data-initial>두</span><span><strong data-name>김두열</strong><small>팀원 · 8조</small></span></button>
+</aside>
+<div class="body">
+<header class="top"><div class="crumb"><span>전지적 액터 시점</span><span data-icon="chevron-right"></span><strong id="crumb"></strong></div><div class="header-actions"><button id="alerts" class="icon-btn bell" aria-label="일정 알림"><span data-icon="bell"></span></button><button class="avatar avatar-button" type="button" data-action="view:profile" aria-label="내 프로필"><span data-initial>두</span></button></div></header>
+<main id="main"></main>
+</div>
+</div>
+<dialog id="dialog"><div id="dialog-content"></div></dialog>
+<div id="toast" role="status" hidden></div>
+</body></html>
